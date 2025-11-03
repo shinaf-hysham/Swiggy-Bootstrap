@@ -1,0 +1,849 @@
+<html>
+
+<head>
+    <title>Swiggy</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .linear-gradient {
+            height: 95px;
+            background-color: white;
+            background-image: linear-gradient(to top, white, grey);
+        }
+
+
+        .navbar-toggler-icon {
+            background-color: black !important;
+        }
+
+        .card-img-top {
+            height: 200px;
+            border-radius: 20px;
+            width: 350px;
+        }
+
+        .carousel-caption {
+            text-align: left;
+            margin-left: -40px;
+            bottom: -15;
+        }
+
+        .gradient-overlay {
+            position: absolute;
+            bottom: 180;
+            width: 398px;
+            height: 120px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+            border-radius: 10px;
+            margin-left: -14;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="linear-gradient"></div>
+        <nav class="navbar navbar-expand-sm bg-white navbar-dark fixed-top">
+
+
+
+            
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.jpg" alt="logo"> <span
+                    style="color: orangered;font-weight: 700;font-size: 25px;"><b>Swiggy</b></span></a>
+
+
+
+
+            <!-- Links -->
+            <ul class="navbar-nav mr-1" style="font-size: 15px;">
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle text-dark mr-2" href="#" id="navbardrop" data-toggle="dropdown">
+                        <b>Setup Your precise location</b>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+
+                    </div>
+                </li>
+            </ul>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+                <div class="container-fluid"
+                    style="width: 450px;height:60px;border-radius:10px;background-color: rgb(233, 233, 233);display: flex;justify-content: space-between;cursor: pointer;">
+
+                    <h4 style="font-size: 18px;margin-top: 15px;color: gray; "><b>Search for restaurant and food</b>
+                    </h4>
+                    <p style="margin-top: 15px;font-size: 18px;color: gray;"><i class="fa fa-search "></i></p>
+
+                </div>
+
+
+
+        </nav>
+
+
+
+
+
+        <div class="container">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner" style="margin-top: 50px; overflow: hidden; ">
+                    <div class="carousel-item active">
+
+                        <img src="offerspage.jpg" alt="Los Angeles" width="1100" height="400" class="img-fluid">
+                        <div class="carousel-caption" style="text-align: left; ">
+                            <h3><b>Restaurants With Great Offers<br>Near ME</b></h3>
+                        </div>
+                    </div>
+
+
+
+                    <div class="carousel-item">
+
+                        <img src="offerspage.jpg" alt="Chicago" width="1100" height="400" class="img-fluid">
+                        <div class="carousel-caption" style="text-align: left; ">
+                            <h3><b>Restaurants With Great Offers<br>Near ME<b></h3>
+
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <img src="offerspage.jpg" alt="New York" width="1100" height="400" class="img-fluid">
+
+                        <div class="carousel-caption" style="text-align: left; ">
+                            <h3><b>Restaurants With Great Offers<br>Near ME</b></h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid" style="display: flex; margin-top: 60px;">
+
+            <h4><b>Order Online</b></h4>
+            <h4 style="margin-left: 30px;"><b>Dineout</b></h4>
+        </div>
+        <div class="container-fluid" style="margin-top: 30px;">
+            <button type="button" class="btn btn-light" style="border-radius: 20px; border: 1px solid black;">Filter
+                &#9902;
+            </button>
+            <button type="button" class="btn btn-light dropdown-toggle "
+                style="border-radius: 20px; border: 1px solid black;" data-toggle="dropdown">Sort By</button>
+            <button type="button" class="btn btn-light " style="border-radius: 20px; border: 1px solid black;">Book a
+                table</button>
+            <button type="button" class="btn btn-light " style="border-radius: 20px; border: 1px solid black;">Within
+                5km</button>
+            <button type="button" class="btn btn-light " style="border-radius: 20px; border: 1px solid black;">rating
+                4+</button>
+        </div>
+
+
+
+        <div style="display: flex;">
+            <div class="container-fluid">
+                <div class="row">
+
+
+                    <div class="col-sm-4">
+                        <div class="card "
+                            style="width:400px; margin-top: 50px; border-radius: 20px; overflow: hidden; ">
+
+
+                            <div class="container">
+
+                                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                                    <!-- Indicators -->
+                                    <ul class="carousel-indicators">
+                                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                        <li data-target="#demo" data-slide-to="1"></li>
+                                        <li data-target="#demo" data-slide-to="2"></li>
+                                    </ul>
+
+                                    <!-- The slideshow -->
+                                    <div class="carousel-inner"
+                                        style="border-radius: 10px; margin-left: -15; width: 400px;">
+                                        <div class="gradient-overlay"></div>
+                                        <div class="carousel-item active">
+
+                                            <img src="chocolatecoffee.jpg" alt="Los Angeles" width="500" height="200">
+
+                                            <div class="carousel-caption"
+                                                style="display: flex; justify-content: space-between;">
+
+                                                <div>
+                                                    <h4 style="font-size: 18px;"><b>Starbucks Coffee</b></h4>
+                                                </div>
+                                                <div style="margin-right: -30px; font-size: 15px;">
+                                                    <p><span style="font-size: 20px;color: green; ">&#10026;</span>
+                                                        <b>4.4</b></p>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+
+
+
+                                        <div class="carousel-item">
+                                            <img src="yellow.jpg" alt="Chicago" width="500" height="200">
+                                            <div class="carousel-caption"
+                                                style="display: flex; justify-content: space-between;">
+                                                <div>
+                                                    <h4 style="font-size: 18px;"><b>Starbucks Coffee</b></h4>
+                                                </div>
+                                                <div style="margin-right: -30px; font-size: 15px;">
+                                                    <p><span style="font-size: 20px;color: green;">&#10026;</span>
+                                                        <b>4.2</b></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <img src="twocoffee.jpg" alt="New York" width="500" height="200">
+
+                                            <div class="carousel-caption"
+                                                style="display: flex; justify-content: space-between;">
+                                                <div>
+                                                    <h4 style="font-size: 18px;"><b>Starbucks Coffee</b></h4>
+                                                </div>
+                                                <div style="margin-right: -30px; font-size: 15px;">
+                                                    <p><span style="font-size: 20px;color: green;">&#10026;</span><b>
+                                                            4.4</b></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="gradient-overlay"></div>
+
+                                <div class="card-body"
+                                    style="display: flex; justify-content: space-between; height: 180px; background-color: white; box-shadow:  rgb(163, 152, 152); ">
+
+                                    <div>
+                                        <p style="color:gray; font-size: 15px; margin-left: -15px;"> Coffee
+                                            House.Beverages <br>
+                                            Kizhakkumpattukara, Thrissur</p>
+                                    </div>
+                                    <div>
+                                        <p style="color: gray; margin-left: 18px; font-size: 12px;">₹900 for two <br>2.1
+                                            km</p>
+
+
+                                    </div>
+
+                                </div>
+                                <button type="button" class="btn btn-light"
+                                    style="width:130px; border-radius: 16px; font-size: 12px; background-color: lightgray; margin-top: -100px; color: gray;"><i
+                                        class="fa fa-calendar-check-o"></i> Table booking</button>
+                                <button type="button" class="btn btn-success"
+                                    style="width: 370px; margin-top: -50px;border-radius: 10px; height: 35px; background-color: rgb(206, 238, 206); border: none; color: seagreen; text-align: left;">
+                                    <b>Up to 10% off with bank offers</b></button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+                    <div class="col-sm-4">
+                        <div class="card"
+                            style="width:400px; margin-top: 50px; border-radius: 20px; overflow: hidden; ">
+
+
+                            <div class="container">
+
+                                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                                    <!-- Indicators -->
+                                    <ul class="carousel-indicators">
+                                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                        <li data-target="#demo" data-slide-to="1"></li>
+                                        <li data-target="#demo" data-slide-to="2"></li>
+                                    </ul>
+
+                                    <!-- The slideshow -->
+                                    <div class="carousel-inner"
+                                        style="border-radius: 20px; margin-left: -15; width: 400px;">
+                                        <div class="gradient-overlay"></div>
+                                        <div class="carousel-item active">
+
+                                            <img src="table.jpg" alt="Los Angeles" width="500" height="200">
+
+                                            <div class="carousel-caption"
+                                                style="display: flex; justify-content: space-between;">
+
+                                                <div>
+                                                    <h4 style="font-size: 18px;"><b>Ming Palace</b></h4>
+                                                </div>
+                                                <div style="margin-right: -30px; font-size: 15px;">
+                                                    <p><span style="font-size: 20px;color: green; ">&#10026;</span>
+                                                        <b>3.9</b></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="table2.jpg" alt="Chicago" width="500" height="200">
+                                            <div class="carousel-caption"
+                                                style="display: flex; justify-content: space-between;">
+                                                <div>
+                                                    <h4 style="font-size: 18px;"><b>Ming Palace</b></h4>
+                                                </div>
+                                                <div style="margin-right: -30px; font-size: 15px;">
+                                                    <p><span style="font-size: 20px;color: green;">&#10026;</span>
+                                                        <b>3.2</b></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <img src="table3.jpg" alt="New York" width="500" height="200">
+
+                                            <div class="carousel-caption"
+                                                style="display: flex; justify-content: space-between;">
+                                                <div>
+                                                    <h4 style="font-size: 18px;"><b>Ming Palace</b></h4>
+                                                </div>
+                                                <div style="margin-right: -30px; font-size: 15px;">
+                                                    <p><span style="font-size: 20px;color: green;">&#10026;</span><b>
+                                                            3.3</b></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="gradient-overlay"></div>
+                                <div class="card-body"
+                                    style="display: flex; justify-content: space-between; height: 180px;">
+                                    <div>
+                                        <p style="color:gray; font-size: 15px; margin-left: -15px;"> Chinese.Beverages
+                                            <br> Kuruppam,
+                                            Thrissur</p>
+                                    </div>
+                                    <div>
+                                        <p style="color: gray; margin-left: 18px; font-size: 12px;">₹800 for two <br>0.9
+                                            km</p>
+
+
+                                    </div>
+
+                                </div>
+                                <button type="button" class="btn btn-light"
+                                    style="width:130px; border-radius: 16px; font-size: 12px; background-color: lightgray; margin-top: -100px; color: gray;"><i
+                                        class="fa fa-calendar-check-o"></i> Table booking</button>
+                                <button type="button" class="btn btn-success"
+                                    style="width: 370px; margin-top: -50px;border-radius: 10px; height: 35px; background-color: rgb(206, 238, 206); border: none; color: seagreen; text-align: left;">
+                                    <b>Up to 10% off with bank offers</b></button>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-sm-4">
+                        <div class="card" style="width:400px; margin-top: 50px; border-radius: 20px; overflow: hidden;">
+
+
+                            <div class="container">
+
+                                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                                    <!-- Indicators -->
+                                    <ul class="carousel-indicators">
+                                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                        <li data-target="#demo" data-slide-to="1"></li>
+                                        <li data-target="#demo" data-slide-to="2"></li>
+                                    </ul>
+
+                                    <!-- The slideshow -->
+                                    <div class="carousel-inner"
+                                        style="border-radius: 20px; margin-left: -15; width: 400px;">
+                                        <div class="gradient-overlay"></div>
+                                        <div class="carousel-item active">
+
+                                            <img src="ambience.jpg" alt="Los Angeles" width="500" height="200">
+
+                                            <div class="carousel-caption"
+                                                style="display: flex; justify-content: space-between;">
+
+                                                <div>
+                                                    <h4 style="font-size: 18px;"><b>Vrindavan Inn</b></h4>
+                                                </div>
+                                                <div style="margin-right: -30px; font-size: 15px;">
+                                                    <p><span style="font-size: 20px;color: green; ">&#10026;</span>
+                                                        <b>3.9</b></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="rice.jpg" alt="Chicago" width="500" height="200">
+                                            <div class="carousel-caption"
+                                                style="display: flex; justify-content: space-between;">
+                                                <div>
+                                                    <h4 style="font-size: 18px;"><b>Vrindavan Inn</b></h4>
+                                                </div>
+                                                <div style="margin-right: -30px; font-size: 15px;">
+                                                    <p><span style="font-size: 20px;color: green;">&#10026;</span>
+                                                        <b>3.2</b></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <img src="plainroast.jpg" alt="New York" width="500" height="200">
+
+                                            <div class="carousel-caption"
+                                                style="display: flex; justify-content: space-between;">
+                                                <div>
+                                                    <h4 style="font-size: 18px;"><b>Vrindavan Inn</b></h4>
+                                                </div>
+                                                <div style="margin-right: -30px; font-size: 15px;">
+                                                    <p><span style="font-size: 20px;color: green;">&#10026;</span><b>
+                                                            3.3</b></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="gradient-overlay"></div>
+                                <div class="card-body"
+                                    style="display: flex; justify-content: space-between; height: 180px;">
+                                    <div>
+                                        <p style="color:gray; font-size: 15px; margin-left: -15px;"> South
+                                            Indian.Tamil<br> Marar Road Area,
+                                            Thrissur</p>
+                                    </div>
+                                    <div>
+                                        <p style="color: gray; margin-left: 18px; font-size: 12px;">₹1000 for two
+                                            <br>1.1 km</p>
+
+
+                                    </div>
+
+                                </div>
+                                <button type="button" class="btn btn-light"
+                                    style="width:130px; border-radius: 16px; font-size: 12px; background-color: lightgray; margin-top: -100px; color: gray;"><i
+                                        class="fa fa-calendar-check-o"></i> Table booking</button>
+                                <button type="button" class="btn btn-success"
+                                    style="width: 370px; margin-top: -50px;border-radius: 10px; height: 35px; background-color: rgb(206, 238, 206); border: none; color: seagreen; text-align: left;">
+                                    <b>Up to 10% off with bank offers</b></button>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div style="display: flex;">
+            <div class="container-fluid">
+
+
+
+                <div class="row">
+
+                    <div class="col-sm-4">
+                        <div class="card" style="width:400px; margin-top: 50px; border-radius: 20px; overflow: hidden;">
+
+
+                            <div class="container">
+
+                                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                                    <!-- Indicators -->
+                                    <ul class="carousel-indicators">
+                                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                        <li data-target="#demo" data-slide-to="1"></li>
+                                        <li data-target="#demo" data-slide-to="2"></li>
+                                    </ul>
+
+                                    <!-- The slideshow -->
+                                    <div class="carousel-inner"
+                                        style="border-radius: 10px; margin-left: -15; width: 400px;">
+                                        <div class="gradient-overlay"></div>
+                                        <div class="carousel-item active">
+
+                                            <img src="library.jpg" alt="Los Angeles" width="500" height="200">
+
+                                            <div class="carousel-caption"
+                                                style="display: flex; justify-content: space-between;">
+
+                                                <div>
+                                                    <h4 style="font-size: 18px;"><b>Shakespeare Feast</b></h4>
+                                                </div>
+                                                <div style="margin-right: -30px; font-size: 15px;">
+                                                    <p><span style="font-size: 20px;color: green; ">&#10026;</span>
+                                                        <b>4.6</b></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="chickenroast.jpg" alt="Chicago" width="500" height="200">
+                                            <div class="carousel-caption"
+                                                style="display: flex; justify-content: space-between;">
+                                                <div>
+                                                    <h4 style="font-size: 18px;"><b>Shakespeare Feast</b></h4>
+                                                </div>
+                                                <div style="margin-right: -30px; font-size: 15px;">
+                                                    <p><span style="font-size: 20px;color: green;">&#10026;</span>
+                                                        <b>4.2</b></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <img src="chilli.jpg" alt="New York" width="500" height="200">
+
+                                            <div class="carousel-caption"
+                                                style="display: flex; justify-content: space-between;">
+                                                <div>
+                                                    <h4 style="font-size: 18px;"><b>Shakespeare Feast</b></h4>
+                                                </div>
+                                                <div style="margin-right: -30px; font-size: 15px;">
+                                                    <p><span style="font-size: 20px;color: green;">&#10026;</span><b>
+                                                            4.4</b></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="gradient-overlay"></div>
+
+                                <div class="card-body"
+                                    style="display: flex; justify-content: space-between; height: 180px; background-color: white; box-shadow:  rgb(163, 152, 152); ">
+
+                                    <div>
+                                        <p style="color:gray; font-size: 15px; margin-left: -15px;"> Continental.Bakery
+                                            <br> East Fort,
+                                            Thrissur</p>
+                                    </div>
+                                    <div>
+                                        <p style="color: gray; margin-left: 18px; font-size: 12px;">₹1000 for two
+                                            <br>1.1 km</p>
+
+
+                                    </div>
+
+                                </div>
+                                <button type="button" class="btn btn-light"
+                                    style="width:130px; border-radius: 16px; font-size: 12px; background-color: lightgray; margin-top: -100px; color: gray;"><i
+                                        class="fa fa-calendar-check-o"></i> Table booking</button>
+                                <button type="button" class="btn btn-success"
+                                    style="width: 370px; margin-top: -50px;border-radius: 10px; height: 35px; background-color: rgb(206, 238, 206); border: none; color: seagreen; text-align: left;">
+                                    <b>Up to 10% off with bank offers</b></button>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <div class="col-sm-4">
+                        <div class="card"
+                            style="width:400px; margin-top: 50px; border-radius: 20px; overflow: hidden; ">
+
+
+                            <div class="container">
+
+                                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                                    <!-- Indicators -->
+                                    <ul class="carousel-indicators">
+                                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                        <li data-target="#demo" data-slide-to="1"></li>
+                                        <li data-target="#demo" data-slide-to="2"></li>
+                                    </ul>
+
+                                    <!-- The slideshow -->
+                                    <div class="carousel-inner"
+                                        style="border-radius: 20px; margin-left: -15; width: 400px;">
+                                        <div class="gradient-overlay"></div>
+                                        <div class="carousel-item active">
+
+                                            <img src="thenga manga curry.jpg" alt="Los Angeles" width="500"
+                                                height="200">
+
+                                            <div class="carousel-caption"
+                                                style="display: flex; justify-content: space-between;">
+
+                                                <div>
+                                                    <h4 style="font-size: 18px;"><b>Thenga Manga By Chef Pillai</b></h4>
+                                                </div>
+                                                <div style="margin-right: -30px; font-size: 15px;">
+                                                    <p><span style="font-size: 20px;color: green; ">&#10026;</span>
+                                                        <b>3.9</b></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="fishfry.jpg" alt="Chicago" width="500" height="200">
+                                            <div class="carousel-caption"
+                                                style="display: flex; justify-content: space-between;">
+                                                <div>
+                                                    <h4 style="font-size: 18px;"><b>Thenga Manga By Chef Pillai</b></h4>
+                                                </div>
+                                                <div style="margin-right: -30px; font-size: 15px;">
+                                                    <p><span style="font-size: 20px;color: green;">&#10026;</span>
+                                                        <b>3.2</b></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <img src="beefkondattam.jpg" alt="New York" width="500" height="200">
+
+                                            <div class="carousel-caption"
+                                                style="display: flex; justify-content: space-between;">
+                                                <div>
+                                                    <h4 style="font-size: 18px;"><b>Thenga Manga By Chef Pillai</b></h4>
+                                                </div>
+                                                <div style="margin-right: -30px; font-size: 15px;">
+                                                    <p><span style="font-size: 20px;color: green;">&#10026;</span><b>
+                                                            3.3</b></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="gradient-overlay"></div>
+                                <div class="card-body"
+                                    style="display: flex; justify-content: space-between; height: 180px;">
+                                    <div>
+                                        <p style="color:gray; font-size: 15px; margin-left: -15px;"> South Indian.Kerala
+                                            <br> PV
+                                            Arcade,Ayyanthole Thrissur</p>
+                                    </div>
+                                    <div>
+                                        <p style="color: gray; margin-left: 18px; font-size: 12px;">₹1000 for two
+                                            <br>2.1 km</p>
+
+
+                                    </div>
+
+                                </div>
+                                <button type="button" class="btn btn-light"
+                                    style="width:130px; border-radius: 16px; font-size: 12px; background-color: lightgray; margin-top: -100px; color: gray;"><i
+                                        class="fa fa-calendar-check-o"></i> Table booking</button>
+                                <button type="button" class="btn btn-success"
+                                    style="width: 370px; margin-top: -50px;border-radius: 10px; height: 35px; background-color: rgb(206, 238, 206); border: none; color: seagreen; text-align: left;">
+                                    <b>Up to 10% off with bank offers</b></button>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                    <div class="col-sm-4">
+                        <div class="card"
+                            style="width:400px; margin-top: 50px; border-radius: 20px; overflow: hidden; ">
+
+
+                            <div class="container">
+
+                                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                                    <!-- Indicators -->
+                                    <ul class="carousel-indicators">
+                                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                        <li data-target="#demo" data-slide-to="1"></li>
+                                        <li data-target="#demo" data-slide-to="2"></li>
+                                    </ul>
+
+                                    <!-- The slideshow -->
+                                    <div class="carousel-inner"
+                                        style="border-radius: 20px; margin-left: -15; width: 400px;">
+                                        <div class="gradient-overlay"></div>
+                                        <div class="carousel-item active">
+
+                                            <img src="kerala.jpg" alt="Los Angeles" width="500" height="200">
+
+                                            <div class="carousel-caption"
+                                                style="display: flex; justify-content: space-between;">
+
+                                                <div>
+                                                    <h4 style="font-size: 18px;"><b>Kerala House</b></h4>
+                                                </div>
+                                                <div style="margin-right: -30px; font-size: 15px;">
+                                                    <p><span style="font-size: 20px;color: green; ">&#10026;</span>
+                                                        <b>4.9</b></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="chatti chor.jpg" alt="Chicago" width="500" height="200">
+                                            <div class="carousel-caption"
+                                                style="display: flex; justify-content: space-between;">
+                                                <div>
+                                                    <h4 style="font-size: 18px;"><b>Kerala House</b></h4>
+                                                </div>
+                                                <div style="margin-right: -30px; font-size: 15px;">
+                                                    <p><span style="font-size: 20px;color: green;">&#10026;</span>
+                                                        <b>4.2</b></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <img src="sadhya.jpg" alt="New York" width="500" height="200">
+
+                                            <div class="carousel-caption"
+                                                style="display: flex; justify-content: space-between;">
+                                                <div>
+                                                    <h4 style="font-size: 18px;"><b>Kerala House</b></h4>
+                                                </div>
+                                                <div style="margin-right: -30px; font-size: 15px;">
+                                                    <p><span style="font-size: 20px;color: green;">&#10026;</span><b>
+                                                            4.3</b></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="gradient-overlay"></div>
+                                <div class="card-body"
+                                    style="display: flex; justify-content: space-between; height: 180px;">
+                                    <div>
+                                        <p style="color:gray; font-size: 15px; margin-left: -15px;"> South
+                                            Indian.Kerala<br> Paravattani,
+                                            Thrissur</p>
+                                    </div>
+                                    <div>
+                                        <p style="color: gray; margin-left: 18px; font-size: 12px;">₹1000 for two <br>3
+                                            km</p>
+
+
+                                    </div>
+
+                                </div>
+                                <button type="button" class="btn btn-light"
+                                    style="width:130px; border-radius: 16px; font-size: 12px; background-color: lightgray; margin-top: -100px; color: gray;"><i
+                                        class="fa fa-calendar-check-o"></i> Table booking</button>
+                                <button type="button" class="btn btn-success"
+                                    style="width: 370px; margin-top: -50px;border-radius: 10px; height: 35px; background-color: rgb(206, 238, 206); border: none; color: seagreen; text-align: left;">
+                                    <b>Up to 10% off with bank offers</b></button>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+</body>
+
+</html>
